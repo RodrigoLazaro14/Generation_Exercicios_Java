@@ -59,6 +59,10 @@ public class Questao2
 		{
 			System.out.printf("\nOrdem: %.2f; %.2f; %.2f", n2, n3, n1);
 		}
+		else if(n1<n2 && n2==n3)
+		{
+			System.out.printf("\nOrdem: %.2f; %.2f; %.2f", n1, n2, n3);
+		}
 		
 		tec.close();
 	}
