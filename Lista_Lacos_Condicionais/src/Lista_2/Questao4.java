@@ -49,6 +49,7 @@ public class Questao4
 			
 		}
 		
+		System.out.println("Total de pessoas pesquisadas: "+ controle);
 		System.out.println("Numero de calmos: "+numeroCalmos);
 		System.out.println("Numero de mulheres nervosas: "+numeroNervosos);
 		System.out.println("Numero de homens agressivos: "+numeroAgressivos);
