@@ -20,22 +20,16 @@ public class Questao3
 			{
 				System.out.printf("Digite um valor para Matriz[%d][%d] : ", (linha+1), (coluna+1));
 				matriz[linha][coluna] = teclado.nextInt();
-				
-			}
-		}
-		System.out.println("\n");
-		for(linha=0; linha<LINHA; linha++)
-		{
-			for(coluna=0; coluna<COLUNA; coluna++)
-			{
 				System.out.printf(" %d \t", matriz[linha][coluna]);
 				if(matriz[linha][coluna]>10)
 				{
 					maiorQue10++;
 				}
+				System.out.println();
+				
 			}
-			System.out.println();
 		}
+
 		if(maiorQue10==0)
 		{
 			System.out.println("\nNão há nenhum número maior que 10 nessa matriz.");

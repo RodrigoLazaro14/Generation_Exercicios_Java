@@ -19,43 +19,29 @@ public class Questao4
 		double[][] matrizSoma = new double[LINHA][COLUNA];
 		double[][] matrizSubtracao = new double[LINHA][COLUNA];
 		int linha, coluna, escolha=0, constante=0;
-				
-		for(linha=0; linha<LINHA; linha++)
-		{
-			for(coluna=0; coluna<COLUNA; coluna++)
-			{
-				matriz[linha][coluna] = aleatorio.nextDouble() * 10;
-			}
-		}
-		for(linha=0; linha<LINHA; linha++)
-		{
-			for(coluna=0; coluna<COLUNA; coluna++)
-			{
-				matriz2[linha][coluna] = aleatorio.nextDouble() * 10;
-			}
-		}
-
+		
 		System.out.println("\nMatriz 1: \n");
 		for(linha=0; linha<LINHA; linha++)
 		{
 			for(coluna=0; coluna<COLUNA; coluna++)
 			{
+				matriz[linha][coluna] = aleatorio.nextDouble() * 10;
 				System.out.printf(" %.2f \t", matriz[linha][coluna]);
 			}
 			System.out.println();
 		}
+		
 		System.out.println("\nMatriz 2: \n");
 		for(linha=0; linha<LINHA; linha++)
 		{
 			for(coluna=0; coluna<COLUNA; coluna++)
 			{
+				matriz2[linha][coluna] = aleatorio.nextDouble() * 10;
 				System.out.printf(" %.2f \t", matriz2[linha][coluna]);
-
 			}
 			System.out.println();
-		}  
-		
-		
+		}
+	
 		System.out.println("\nFaça uma escolha: \n");
 		System.out.println("Digite 1 para somar as duas matrizes.");
 		System.out.println("Digite 2 para subtrair a primeira matriz da segunda.");
@@ -77,16 +63,11 @@ public class Questao4
 					for(coluna=0; coluna<COLUNA; coluna++)
 					{
 						matrizSoma[linha][coluna]=(matriz[linha][coluna]+matriz2[linha][coluna]);
-					}
-				}
-				for(linha=0; linha<LINHA; linha++)
-				{
-					for(coluna=0; coluna<COLUNA; coluna++)
-					{
 						System.out.printf(" %.2f \t", matrizSoma[linha][coluna]);
 					}
 					System.out.println();
 				}
+
 			}
 			else if(escolha==2)
 			{
@@ -96,12 +77,6 @@ public class Questao4
 					for(coluna=0; coluna<COLUNA; coluna++)
 					{
 						matrizSubtracao[linha][coluna]=(matriz2[linha][coluna]-matriz[linha][coluna]);
-					}
-				}
-				for(linha=0; linha<LINHA; linha++)
-				{
-					for(coluna=0; coluna<COLUNA; coluna++)
-					{
 						System.out.printf(" %.2f \t", matrizSubtracao[linha][coluna]);
 					}
 					System.out.println();
@@ -136,7 +111,7 @@ public class Questao4
 			}
 			else
 			{
-				System.out.println("\nRESULTADO: \n");
+				System.out.println("\nRESULTADO: ");
 				System.out.println("\nMatriz 1: \n");
 				for(linha=0; linha<LINHA; linha++)
 				{
