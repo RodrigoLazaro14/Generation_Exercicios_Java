@@ -8,7 +8,7 @@ public class Questao2
 	public int quantidadePassageiros=200;
 	public int assentosOcupados;
 	public double precoPassagem;
-	
+		
 	public void informacoesAviao() 
 	{
 		System.out.println("INFORMAÇÕES DO VOO: ");
