@@ -19,4 +19,3 @@ public class Cadastro {
 		System.out.println(pessoaTeste2.getNome());
 	}
 }
-
